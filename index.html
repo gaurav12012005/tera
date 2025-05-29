@@ -78,7 +78,17 @@
     }
   </style>
  </head>
- <body class="relative min-h-screen flex flex-col items-center justify-center px-4 py-8 bg-pink-50 overflow-hidden">
+<body class="relative min-h-screen bg-pink-50">
+  <!-- Floating images wrapped to avoid layout interference -->
+  <div class="fixed top-0 left-0 w-full h-full pointer-events-none z-10">
+    <!-- your floating <img> elements here -->
+  </div>
+
+  <!-- Main content -->
+  <main class="flex flex-col items-center justify-center min-h-screen px-4 pt-20 pb-10 text-center relative z-20">
+    <!-- your page content -->
+  </main>
+</body>
   <!-- Floating Roses and Hearts -->
   <img alt="Floating red rose with delicate petals and green leaves" class="floating" height="40" src="https://storage.googleapis.com/a1aa/image/d960c5c9-ef5a-43fa-cf9f-9f04d9893f0a.jpg" style="left: 5vw; animation-duration: 12s; animation-delay: 0s;" width="40"/>
   <img alt="Floating bright red heart with a glossy shine" class="floating" height="35" src="https://storage.googleapis.com/a1aa/image/64b2c648-4687-4521-bf0f-ef8f2a4bfb31.jpg" style="left: 15vw; animation-duration: 14s; animation-delay: 2s;" width="35"/>
