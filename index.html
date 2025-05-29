@@ -1,0 +1,191 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Love App for Betuuu
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Pacifico&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Pacifico', cursive;
+      overflow-x: hidden;
+      background: #ffe6f0;
+      position: relative;
+      min-height: 100vh;
+    }
+    /* Floating hearts and roses animation */
+    .floating {
+      position: fixed;
+      pointer-events: none;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      will-change: transform;
+      user-select: none;
+      z-index: 10;
+    }
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) translateX(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-150px) translateX(20px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+    @keyframes floatUpSlow {
+      0% {
+        transform: translateY(100vh) translateX(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-200px) translateX(-20px) rotate(-360deg);
+        opacity: 0;
+      }
+    }
+    /* Hug animation */
+    @keyframes hugPulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+    /* Kiss animation */
+    @keyframes kissPulse {
+      0%, 100% {
+        transform: scale(1) translateX(0);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.2) translateX(10px);
+        opacity: 0.7;
+      }
+    }
+    /* Balloon float */
+    @keyframes balloonFloat {
+      0% {
+        transform: translateY(100vh) translateX(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-150px) translateX(30px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+ </head>
+ <body class="relative min-h-screen bg-pink-50">
+  <!-- Floating images wrapped to avoid layout interference -->
+  <div class="fixed top-0 left-0 w-full h-full pointer-events-none z-10">
+    <!-- your floating <img> elements here -->
+  </div>
+
+  <!-- Main content -->
+  <main class="flex flex-col items-center justify-center min-h-screen px-4 pt-20 pb-10 text-center relative z-20">
+    <!-- your page content -->
+  </main>
+</body>
+
+  <!-- Floating hearts and roses -->
+  <img alt="Red heart floating icon with soft glow" class="floating" height="40" src="https://storage.googleapis.com/a1aa/image/5036c6bd-183e-4806-56d8-e2afb30afc1a.jpg" style="left: 5vw; animation: floatUp 12s linear infinite; width: 40px; height: 40px;" width="40"/>
+  <img alt="Red rose flower floating icon with delicate petals" class="floating" height="50" src="https://storage.googleapis.com/a1aa/image/3df4d5a3-96fc-49e6-0c55-1296b54cdaf1.jpg" style="left: 15vw; animation: floatUpSlow 15s linear infinite; width: 50px; height: 50px;" width="50"/>
+  <img alt="Small red heart floating icon with soft glow" class="floating" height="35" src="https://storage.googleapis.com/a1aa/image/c1e41c19-7d19-4d5b-989b-a23f44fa2b97.jpg" style="left: 25vw; animation: floatUp 10s linear infinite; width: 35px; height: 35px;" width="35"/>
+  <img alt="Red rose flower floating icon with delicate petals" class="floating" height="45" src="https://storage.googleapis.com/a1aa/image/3df4d5a3-96fc-49e6-0c55-1296b54cdaf1.jpg" style="left: 35vw; animation: floatUpSlow 14s linear infinite; width: 45px; height: 45px;" width="45"/>
+  <img alt="Red heart floating icon with soft glow" class="floating" height="40" src="https://storage.googleapis.com/a1aa/image/5036c6bd-183e-4806-56d8-e2afb30afc1a.jpg" style="left: 45vw; animation: floatUp 13s linear infinite; width: 40px; height: 40px;" width="40"/>
+  <img alt="Red rose flower floating icon with delicate petals" class="floating" height="50" src="https://storage.googleapis.com/a1aa/image/3df4d5a3-96fc-49e6-0c55-1296b54cdaf1.jpg" style="left: 55vw; animation: floatUpSlow 16s linear infinite; width: 50px; height: 50px;" width="50"/>
+  <img alt="Small red heart floating icon with soft glow" class="floating" height="35" src="https://storage.googleapis.com/a1aa/image/c1e41c19-7d19-4d5b-989b-a23f44fa2b97.jpg" style="left: 65vw; animation: floatUp 11s linear infinite; width: 35px; height: 35px;" width="35"/>
+  <img alt="Red rose flower floating icon with delicate petals" class="floating" height="45" src="https://storage.googleapis.com/a1aa/image/3df4d5a3-96fc-49e6-0c55-1296b54cdaf1.jpg" style="left: 75vw; animation: floatUpSlow 15s linear infinite; width: 45px; height: 45px;" width="45"/>
+  <img alt="Red heart floating icon with soft glow" class="floating" height="40" src="https://storage.googleapis.com/a1aa/image/5036c6bd-183e-4806-56d8-e2afb30afc1a.jpg" style="left: 85vw; animation: floatUp 12s linear infinite; width: 40px; height: 40px;" width="40"/>
+  <img alt="Red rose flower floating icon with delicate petals" class="floating" height="50" src="https://storage.googleapis.com/a1aa/image/3df4d5a3-96fc-49e6-0c55-1296b54cdaf1.jpg" style="left: 95vw; animation: floatUpSlow 14s linear infinite; width: 50px; height: 50px;" width="50"/>
+  <!-- Floating balloons -->
+  <img alt="Pink balloon floating gently upwards with shiny surface" class="floating" height="80" src="https://storage.googleapis.com/a1aa/image/0d28e97b-471f-44d8-eb31-4e735cff5b13.jpg" style="left: 10vw; animation: balloonFloat 20s linear infinite; width: 60px; height: 80px;" width="60"/>
+  <img alt="Bright pink balloon floating gently upwards with shiny surface" class="floating" height="70" src="https://storage.googleapis.com/a1aa/image/b2019cc0-f448-4c94-cb84-1726536c86c8.jpg" style="left: 30vw; animation: balloonFloat 18s linear infinite; width: 50px; height: 70px;" width="50"/>
+  <img alt="Pink balloon floating gently upwards with shiny surface" class="floating" height="75" src="https://storage.googleapis.com/a1aa/image/0d28e97b-471f-44d8-eb31-4e735cff5b13.jpg" style="left: 50vw; animation: balloonFloat 22s linear infinite; width: 55px; height: 75px;" width="55"/>
+  <img alt="Bright pink balloon floating gently upwards with shiny surface" class="floating" height="80" src="https://storage.googleapis.com/a1aa/image/b2019cc0-f448-4c94-cb84-1726536c86c8.jpg" style="left: 70vw; animation: balloonFloat 19s linear infinite; width: 60px; height: 80px;" width="60"/>
+  <img alt="Pink balloon floating gently upwards with shiny surface" class="floating" height="70" src="https://storage.googleapis.com/a1aa/image/0d28e97b-471f-44d8-eb31-4e735cff5b13.jpg" style="left: 90vw; animation: balloonFloat 21s linear infinite; width: 50px; height: 70px;" width="50"/>
+  <main class="flex flex-col items-center justify-center min-h-screen px-4 pt-20 pb-10 text-center relative z-20">
+   <h1 class="text-6xl md:text-7xl text-pink-600 mb-6 font-great-vibes" style="font-family: 'Great Vibes', cursive;">
+    I Love You Betuuu
+   </h1>
+   <!-- Love letter -->
+   <section class="bg-white bg-opacity-90 rounded-xl shadow-lg max-w-xl p-8 mb-12 relative">
+    <img alt="Love letter envelope icon with heart seal" class="absolute top-4 right-4 w-16 h-16" height="100" src="https://storage.googleapis.com/a1aa/image/17d22b53-2113-476c-16fd-ddcff550c1b4.jpg" width="100"/>
+    <p class="text-pink-700 text-lg md:text-xl leading-relaxed font-semibold">
+     Meri Ek Loti Jaan Meri Betuuu 💖💖💖,
+     <br/>
+     <br/>
+     Betuuu i love you so much jaan hai tu meri 💖 tere se bohot jada pyar karta hu phle din se hi or etna pyar karta hu ki din din badta ja rha hai , teri fikar lgi bhgwan bs tuhje shambhal kar rakhe bolta hu tera dhyan rahke tere har din acha kare tuhje kisi ki nazar na lage bs meri nazar lge apko dehk din acha ho jata hai yr apki ek smile or mere pura din vhi acha hogya or kuch fr chaiye or jab tu soke uthi hai hyeeeeeeeee kitniiii pyariiii lagtiiii haiiii puri meri cutu littel baby lgti hai meri pyari si betuuu tere bareme jitna bhi bolu na beta kam hai tu sab kuch hai mere liye sb kuch sach bolu to tu hai to me hu varna me kuch bhi nhi hai or me tuhje promise karta hu ki hamere future ke liye bohot mehant karunga tuhje hamesha khus rakhunga hamesha uncle aunty ko bhi me convence kar lunga hamari shadi ke liye ha me bhot jadli yesab bl rha hu lekin me jitni bhi mehant abhi kar rha hu or aghe karunga na sab hamare liye hamare future ke liye hamari pyari si beti ke ya bete ke liye per muhje phli betihi chiye dehklo baki chalo jada nhi bolta hu bs etna bolna tha ki you complete me betuuu tere bina mere me mera kuch nhi mera jo hai sab tera muhje bs tu chiye i love you so much betuuu sooo soooo soooo much love youuuuu beta 💖💖💖💖  
+     <br/>
+     <br/>
+     Mera Pura Pyar Tere Liye Hai Beta 💖💖,
+     <br/>
+     Tera Tapluuuuu ❤️
+    </p>
+   </section>
+   <!-- Hug animation -->
+   <section class="flex flex-col items-center mb-12">
+    <img alt="Animated hugging face emoji with warm smile and open arms" class="w-36 h-36 md:w-44 md:h-44 animate-hugPulse" height="150" src="https://storage.googleapis.com/a1aa/image/440f9907-a3d1-448d-927f-b173a0fd17a6.jpg" style="animation: hugPulse 3s ease-in-out infinite;" width="150"/>
+    <p class="mt-4 text-pink-600 text-2xl font-semibold">
+     Sending you a big warm hug!
+    </p>
+   </section>
+   <!-- Kiss animation -->
+   <section class="flex flex-col items-center mb-12">
+    <img alt="Animated kissing face emoji blowing a kiss with heart" class="w-36 h-36 md:w-44 md:h-44 animate-kissPulse" height="150" src="https://storage.googleapis.com/a1aa/image/630f18bb-e858-4565-e5f6-70df0270965b.jpg" style="animation: kissPulse 3s ease-in-out infinite;" width="150"/>
+    <p class="mt-4 text-pink-600 text-2xl font-semibold">
+     A sweet kiss just for you!
+    </p>
+   </section>
+   <!-- Surprise gift -->
+   <section class="relative mb-16">
+    <img alt="Bright red gift box with golden ribbon and bow" class="mx-auto w-48 h-48 md:w-56 md:h-56 cursor-pointer hover:scale-110 transition-transform duration-300" height="200" id="giftBox" src="https://storage.googleapis.com/a1aa/image/a0825485-9251-4fc1-aeb2-45084f0afe0e.jpg" width="200"/>
+    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-100 bg-opacity-90 rounded-xl opacity-0 pointer-events-none transition-opacity duration-500" id="giftMessage">
+     <h2 class="text-5xl md:text-6xl font-great-vibes text-pink-700 mb-4" style="font-family: 'Great Vibes', cursive;">
+      I Love You Betuuu! ❤️
+     </h2>
+     <p class="text-pink-600 text-xl max-w-md">
+      Chocolates apke liye betuuu ❤️
+     </p>
+    </div>
+   </section>
+   <!-- Chocolates grid -->
+   <section class="max-w-4xl w-full grid grid-cols-3 sm:grid-cols-5 gap-6 mb-16">
+    <img alt="Square chocolate piece with smooth glossy surface" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/91ee8208-6341-41b5-1487-87514b9a93ff.jpg" width="80"/>
+    <img alt="Dark chocolate piece with shiny texture" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/de27f2a0-0f66-48ca-a823-8b656161d928.jpg" width="80"/>
+    <img alt="Milk chocolate piece with creamy texture" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/6e372a92-038d-4eb0-6c18-903502a6db9c.jpg" width="80"/>
+    <img alt="Square chocolate piece with smooth glossy surface" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/91ee8208-6341-41b5-1487-87514b9a93ff.jpg" width="80"/>
+    <img alt="Dark chocolate piece with shiny texture" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/de27f2a0-0f66-48ca-a823-8b656161d928.jpg" width="80"/>
+    <img alt="Milk chocolate piece with creamy texture" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/6e372a92-038d-4eb0-6c18-903502a6db9c.jpg" width="80"/>
+    <img alt="Square chocolate piece with smooth glossy surface" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/91ee8208-6341-41b5-1487-87514b9a93ff.jpg" width="80"/>
+    <img alt="Dark chocolate piece with shiny texture" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/de27f2a0-0f66-48ca-a823-8b656161d928.jpg" width="80"/>
+    <img alt="Milk chocolate piece with creamy texture" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/6e372a92-038d-4eb0-6c18-903502a6db9c.jpg" width="80"/>
+    <img alt="Square chocolate piece with smooth glossy surface" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/91ee8208-6341-41b5-1487-87514b9a93ff.jpg" width="80"/>
+    <img alt="Dark chocolate piece with shiny texture" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/de27f2a0-0f66-48ca-a823-8b656161d928.jpg" width="80"/>
+    <img alt="Milk chocolate piece with creamy texture" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/6e372a92-038d-4eb0-6c18-903502a6db9c.jpg" width="80"/>
+    <img alt="Square chocolate piece with smooth glossy surface" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/91ee8208-6341-41b5-1487-87514b9a93ff.jpg" width="80"/>
+    <img alt="Dark chocolate piece with shiny texture" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/de27f2a0-0f66-48ca-a823-8b656161d928.jpg" width="80"/>
+    <img alt="Milk chocolate piece with creamy texture" class="mx-auto w-20 h-20 rounded-lg shadow-lg" height="80" src="https://storage.googleapis.com/a1aa/image/6e372a92-038d-4eb0-6c18-903502a6db9c.jpg" width="80"/>
+   </section>
+  </main>
+  <script>
+   const giftBox = document.getElementById('giftBox');
+    const giftMessage = document.getElementById('giftMessage');
+
+    giftBox.addEventListener('click', () => {
+      if (giftMessage.style.opacity === '1') {
+        giftMessage.style.opacity = '0';
+        giftMessage.style.pointerEvents = 'none';
+      } else {
+        giftMessage.style.opacity = '1';
+        giftMessage.style.pointerEvents = 'auto';
+      }
+    });
+  </script>
+ </body>
+</html>
